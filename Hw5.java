@@ -10,7 +10,7 @@ public class Hw5 {
 
 // 1. Создать словарь HashMap. Обобщение <Integer, String>.
         HashMap<Integer,String> Fio = new HashMap<>();
-        
+
 // 2. Заполнить пятью ключами (индекс, ФИО+Возраст+Пол "Иванов Иван Иванович 28 м"), добавить ключ, если не было!)
         Fio.put(0, "Ильин Федор Ярославович 24 м");
         Fio.put(1, "Быкова Алла Мэлоровна 33 ж");
@@ -45,7 +45,6 @@ public class Hw5 {
         System.out.println("\nОтсортированные значения по возрасту: ");
         for (String i : values) {
             String[] a = i.split(" ");
-            
             System.out.printf("%s %s.%s. %s %s\n", a[0], a[1].substring(0, 1), a[2].substring(0, 1), a[3], a[4]);
         }
     }
